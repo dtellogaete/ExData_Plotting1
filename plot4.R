@@ -55,6 +55,9 @@ with(data2, lines(Datetime,
                   Sub_metering_3,
                   type = "l", 
                   col = "blue"))
+legend("topright", pch = 19, col = c("gray", "red", "blue"), 
+       legend = c("Sub_metering_1", "Sub_metering_2",
+                  "Sub_metering_3"))
 with(data2, plot(Datetime,
                  Global_reactive_power,
                  type = "l",
